@@ -1,0 +1,141 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Grey: hsl(213, 16%, 22%)
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.container {
+    width: 20rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--Dark-Blue);
+}
+
+.star {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--Grey);
+}
+
+.star img {
+    width: .9rem;
+    height: .9rem
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--White);
+    margin-bottom: -.3rem;
+}
+
+p {
+    color: var(--Medium-Grey);
+    line-height: 1.5rem;
+    font-size: 14.5px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.ratings > div {
+    width: 2rem;
+    height: 2rem;
+    padding: .4rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Medium-Grey);
+    background-color: var(--Grey);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ratings > div:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.ratings > div.clicked {
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+
+.submit {
+    width: 100%;
+    padding: .8rem;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 50px;
+    letter-spacing: .2rem;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.hide {
+    display: none;
+    pointer-events: none;
+}
+
+.thankyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.selected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: .3rem 1rem;
+    color: var(--Orange);
+    background-color: var(--Grey);
+    border-radius: 50px;
+}
+
+h1 {
+    color: var(--White);
+    margin-bottom: -.5rem;
+}
